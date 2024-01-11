@@ -1,0 +1,87 @@
+@import "variables";
+.block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  background: #161616;
+  border-radius: 15px;
+  row-gap: 20px;
+
+  @media screen and (max-width: 540px) {
+    padding: 20px;
+  }
+
+  &-title {
+    justify-content: center;
+    align-self: center;
+    color: var(--orange);
+    margin-bottom: 0;
+
+    @media screen and (max-width: 540px) {
+      font-size: 20px;
+    }
+  }
+}
+.icon-settings {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 24px;
+  right: 30px;
+  background-image: url($images + "icon/icon_settings.svg");
+  background-size: contain;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.settings-menu {
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 180px;
+  max-width: 280px;
+  background-color: var(--main-white);
+  padding: 6px 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.settings-menu-item,
+.settings-standalone-trigger {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  user-select: none;
+  min-width: 64px;
+  line-height: 36px;
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+}
+
+.settings-menu-item:hover {
+  background-color: var(--orange);
+  color: var(--main-white);
+}
+
+.settings-standalone-item {
+  background-color: var(--main-white);
+}
+.settings-standalone-item:hover {
+  background-color: #161616;
+  color: var(--main-white);
+}
+.settings-standalone-item[aria-expanded="true"] {
+  background-color: #161616;
+  color: var(--main-white);
+}
+
+.mt {
+  &-50 {
+    margin-top: 50px;
+  }
+}
