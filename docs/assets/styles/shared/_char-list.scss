@@ -69,7 +69,7 @@
     // background-color: var(--main-white);
     text-align: center;
     // color: var(--dark);
-    padding: 2px 0;
+    padding: 3px 0;
 
     white-space: nowrap;
     overflow: hidden;
@@ -80,9 +80,11 @@
     background-color: var(--main-white);
     color: var(--dark);
     border-radius: 0 0 5px 5px;
+    font-weight: 500;
 
     @media screen and (max-width: 540px) {
       width: 70px;
+      padding: 2px 0;
     }
   }
 }
