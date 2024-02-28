@@ -1,0 +1,9 @@
+@import "variables";
+
+.chube {
+  @for $id from 3000 through 3031 {
+    &_#{$id} {
+      background-image: url($images + "psychube/icon/chube_#{$id}.webp");
+    }
+  }
+}

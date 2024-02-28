@@ -1,7 +1,7 @@
 @import "variables";
 
 .card {
-  @for $id from 3001 through 3070 {
+  @for $id from 3001 through 3072 {
     &_#{$id} {
       background-image: url($images + "character/icon/card_#{$id}.webp");
     }
